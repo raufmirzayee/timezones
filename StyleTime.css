@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: skyblue;
+  
+  padding: 20px;
+  font-family: 'Arial' ,unset;
+
+}
+
+
+.container {
+flex-direction: row;
+  margin: auto;
+  padding: 20px;
+  background: skyblue;
+  border-radius: 15px;
+  gap: 16px;
+  box-shadow:  0 4px 10px rgba(0, 0, 0, 0.3);
+
+  margin: 0 auto;
+  padding: 20px;
+ 
+}
+
+h1, h2 {
+  
+  margin-bottom: 10px;
+}
+p{
+  font-size: 2vw;
+  margin-top: 10px;
+}
+
+.flex-itme {
+flex: 1;
+  padding: 20px;
+  background-color: #0003;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.Fevorite{
+  position: relative;
+}
+
+.Fevorite ul{
+  list-style: none;
+  color: white;
+  font-size: 30px;
+  border: 1px solid white;
+  padding: 2px;
+}
+
+.Fevorite li:hover{
+  background-color: skyblue;
+}
+
+.Fevorite li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: black;
+
+}
+
+
+.banner, .Fevorite, .timezone-table {
+  flex: 1;
+  background-color: #e8f0fe;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  min-width: 300px; 
+}
+
+.banner h1 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+
+}
+
+
+#current-datetime {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+#current-datetime:hover{
+  background-color: skyblue;
+}
+button{
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px ;
+  cursor: pointer;
+ }
+
+ .timezone-table{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  height: 800px;
+  overflow: auto;
+}
+.timezone-table table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.timezone-table th, .timezone-table td{
+  border: 1px solid white;
+  padding: 10px;
+  text-align: left;
+}
+
+.timezone-table th{
+  background-color: black;
+  color: white;
+}
+
+.remove-btn{
+  background-color: skyblue;
+  color: white;
+
+}
+
+.remove-btn:hover{
+  background-color: red;
+}
+
+.add-btn{
+  background-color: black;
+  color: white;
+
+}
+.add-btn:hover{
+  background-color: black;
+}
+
+.text{
+  text-align: center;
+  justify-content: center;
+  flex: 1;
+}
+input[type="search"]{
+  width: 100%;
+  background-color: skyblue;
+  border: 1px solid #4445;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+
+}
+input[type="search"]:hover{
+  background-color: white;
+}
+
+.search-container {
+  position: relative; 
+  display: flex;
+  align-items: center; 
+}
+
+.search-container i {
+  position: absolute;
+  right: 20px; 
+  pointer-events: none; 
+}
+
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  input[type="search"], #current-datetime {
+    font-size: 16px;
+  }
+
+  .banner h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width:1200px){
+  .container{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="StyleTime.css">	
+</head>
+<body>
+<section class="container">
+<div class="flex-itme">
+<div class="banner">
+<h1> Current Date and Time </h1>
+<p id="current-datetime"></p>
+<div>
+<label for="toggle">
+<input type="checkbox" onchange="toggleTime(this.checked)"  checked name="toggle" id="toggle"> 12 hour
+</label>
+</div>
+</div>
+<div class="Fevorite">
+<h1> Fevorite list</h1>
+<ul id="Fevorite-timezones"></ul>
+</div></div>
+
+<br><hr>	
+<div class="flex-itme">
+<div class="timezone-table">
+<h2>International Timezones</h2>
+<div class="search-container">
+  <input type="search" name="search" id="search" onkeyup="searchTimeZone(this.value)" placeholder="Search" autocomplete="off">
+  <i class="fas fa-search"></i>
+</div>
+
+
+<table>
+<thead>
+<tr>
+	<th> ID</th>
+	<th>Country </th>
+	<th>Time zones </th>
+	<th>Action </th>
+    
+</tr>
+</thead>
+<tbody id="Timezone-list">
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<script type="text/javascript" src="Timezone.js"></script>
+</body>
+</html>
